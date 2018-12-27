@@ -1,7 +1,13 @@
+# :construction: Notice :construction:
+
+Pardon the mess. The `master` branch is in flux while we work on Lodash v5. This
+means things like npm scripts, which we encourage using for contributions, may
+not be working. Thank you for your patience.
+
 # Contributing to Lodash
 
 Contributions are always welcome. Before contributing please read the
-[code of conduct](https://js.foundation/conduct/) &
+[code of conduct](https://js.foundation/community/code-of-conduct) &
 [search the issue tracker](https://github.com/lodash/lodash/issues); your issue
 may have already been discussed or fixed in `master`. To contribute,
 [fork](https://help.github.com/articles/fork-a-repo/) Lodash, commit your changes,
@@ -61,7 +67,7 @@ established in the code.
   [JSDoc-style](http://www.2ality.com/2011/08/jsdoc-intro.html) comments for
   functions.
 
-Guidelines are enforced using [JSCS](https://www.npmjs.com/package/jscs):
+Guidelines are enforced using [ESLint](https://www.npmjs.com/package/eslint):
 ```bash
 $ npm run style
 ```
