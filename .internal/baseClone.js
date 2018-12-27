@@ -182,6 +182,9 @@ function baseClone(value, bitmask, customizer, key, object, stack) {
       return cloneBuffer(value, isDeep)
     }
     if (tag == objectTag || tag == argsTag || (isFunc && !object)) {
+      // initCloneObject 返回一个空对象，如果 value 自身不是一个原型对象且拥有原型，
+      // 则 返回的 result 会继承 value 的原型，即 result 的原型就是 value 的原型，
+      // 这很合理，因为 clone 一个对象，当然要和这个对象有相同的 instanceof
       result = (isFlat || isFunc) ? {} : initCloneObject(value)
       if (!isDeep) {
         return isFlat
